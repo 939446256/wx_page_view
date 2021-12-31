@@ -1,0 +1,25 @@
+/* pages/morePageView/index.wxss */
+.title {
+  width: 750rpx;
+  line-height: 88rpx;
+  text-align: center;
+  background: white;
+}
+
+.leftContentView {
+  position: fixed;
+  top: 88rpx;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+  border: 1px solid #ccc;
+}
+
+.rightContentView {
+  position: fixed;
+  top: 88rpx;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #ccc;
+}

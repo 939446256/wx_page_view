@@ -1,0 +1,27 @@
+<!--pages/morePageView/index.wxml-->
+<view class="title">
+  多个滚动组件
+</view>
+<!-- 左滚动分页组件 -->
+<view class="leftContentView">
+  <!-- id作为组件注入和回调主要名称 -->
+  <!-- 请求方法一:回调方法 -->
+  <pageView id="leftPageView" >
+    <view style="display: flex;flex-direction: column;">
+      <!-- 注入对象名称: 组件id + Target -->
+      <caseItem wx:for="{{leftPageViewTarget.list}}" item="{{item}}" wx:key="index"></caseItem>
+    </view>
+  </pageView>
+</view>
+
+<!-- 右滚动分页组件 -->
+<view class="rightContentView">
+  <!-- id作为组件注入和回调主要名称 -->
+  <!-- 请求方法二: 注入方法 -->
+  <pageView id="rightPageView" >
+    <view style="display: flex;flex-direction: column;">
+      <!-- 注入对象名称: id + Target -->
+      <caseItem wx:for="{{rightPageViewTarget.list}}" item="{{item}}" wx:key="index"></caseItem>
+    </view>
+  </pageView>
+</view>

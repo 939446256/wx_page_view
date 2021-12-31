@@ -1,0 +1,12 @@
+<!--components/pageView/pageView.wxml-->
+<!-- 注意: 因scroll-view, 外层需确定高宽 -->
+<view style="height:100%;width:100%">
+  <scroll-view class="flex-col" style="height:100%;width:100%" refresher-triggered="{{isRefreshing}}" bindrefresherrefresh="refresh" bindscrolltolower="scrolltolower" bindscroll="bindscroll" enhanced="{{true}}" bounces="{{false}}" scroll-anchoring="{{true}}" scroll-y refresher-enabled>
+    <slot></slot>
+    <!-- 自定义上拉提示 -->
+    <view wx:if="{{isShowMoreText}}" bindtap="clickMore" class="more-view">
+      <image class="load-more" src='/images/loading_icon.png' wx:if="{{!isNoMore}}"></image>
+      {{ isNoMore ? '没有更多' : '上拉加载更多' }}
+    </view>
+  </scroll-view>
+</view>

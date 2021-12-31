@@ -1,0 +1,39 @@
+<!--pages/morePageView/index.wxml-->
+<view class="title">
+  多种请求用法
+</view>
+
+<view class="sub-title">请求方法一: 回调</view>
+<view class="content-view">
+  <!-- 请求方法一: 回调方法 -->
+  <pageView id="callPageView" maxLimit="4">
+    <view class="page-view-content">
+      <!-- 注入对象名称: id + Target -->
+      <caseItem style="width: 340rpx;" wx:for="{{callPageViewTarget.list}}" item="{{item}}" wx:key="index"></caseItem>
+    </view>
+  </pageView>
+</view>
+
+
+<view class="sub-title">请求方法二: 组件参数</view>
+<view class="content-view">
+  <!-- 请求方法二: 组件参数 -->
+  <pageView id="paramsPageView" requestUrl="https://mall.ggdzhj.com/api/business/product/queryForList">
+    <view class="page-view-content">
+      <!-- 注入对象名称: id + Target -->
+      <caseItem style="width: 340rpx;" wx:for="{{paramsPageViewTarget.list}}" item="{{item}}" wx:key="index"></caseItem>
+    </view>
+  </pageView>
+</view>
+
+<view class="sub-title">请求方法三: 自定义请求工具</view>
+<view class="content-view">
+  <!-- 请求方法三: 自定义请求工具 -->
+  <!-- 自定义的请求方法, 请求名称配置文件为/api/api.js -->
+  <pageView id="customPageView" requestMethodName="getProductList">
+    <view class="page-view-content">
+      <!-- 注入对象名称: id + Target -->
+      <caseItem style="width: 340rpx;" wx:for="{{customPageViewTarget.list}}" item="{{item}}" wx:key="index"></caseItem>
+    </view>
+  </pageView>
+</view>

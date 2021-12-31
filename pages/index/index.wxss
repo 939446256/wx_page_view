@@ -1,0 +1,12 @@
+page {
+  padding: 30rpx;
+  background-color: coral;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content button {
+  margin-bottom: 20rpx;
+}

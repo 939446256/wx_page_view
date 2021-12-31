@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "多个滚动组件",
+  "usingComponents": {
+    "caseItem": "/components/caseItem/caseItem",
+    "pageView": "/components/pageView/pageView"
+  }
+}

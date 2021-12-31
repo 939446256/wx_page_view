@@ -1,0 +1,8 @@
+/* pages/base/index.wxss */
+.content {
+  position: fixed;
+  left: 0;
+  top: 88rpx;
+  right: 0;
+  bottom: 0;
+}

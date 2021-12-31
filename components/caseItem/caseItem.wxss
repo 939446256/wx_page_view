@@ -1,0 +1,17 @@
+/* components/caseItem/caseItem.wxss */
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.case-item {
+  background: white;
+  margin: 30rpx 30rpx;
+  position: relative;
+}

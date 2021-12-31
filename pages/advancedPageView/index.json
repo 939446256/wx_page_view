@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "多种请求用法",
+  "usingComponents": {
+    "caseItem": "/components/caseItem/caseItem",
+    "pageView": "/components/pageView/pageView"
+  }
+}

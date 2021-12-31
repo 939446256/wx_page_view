@@ -1,0 +1,8 @@
+<!--components/caseItem/caseItem.wxml-->
+<view class="case-item flex-col bottom-shadow">
+  <image mode="widthFix" style="width: 100%;" src="{{testImgUrl}}"></image>
+  <!-- 内容 -->
+  <label style="font-size:30rpx;padding: 20rpx;">
+    {{item.name}}
+  </label>
+</view>

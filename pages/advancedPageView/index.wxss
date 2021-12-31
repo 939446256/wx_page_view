@@ -1,0 +1,30 @@
+/* pages/morePageView/index.wxss */
+.title {
+  width: 750rpx;
+  line-height: 88rpx;
+  text-align: center;
+  background: white;
+}
+
+.page-view-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sub-title {
+  width: 750rpx;
+  line-height: 88rpx;
+  text-align: center;
+  background: white;
+  border: 2px solid #ccc;
+  background: coral;
+  color: white;
+}
+
+.content-view {
+  position: relative;
+  height: 360rpx;
+  background-color: skyblue;
+}

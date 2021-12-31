@@ -1,0 +1,5 @@
+<view class="content">
+  <button bindtap="click" wx:for="{{buttonList}}" data-item="{{item}}" wx:key="index">
+    {{item.label}}
+  </button>
+</view>

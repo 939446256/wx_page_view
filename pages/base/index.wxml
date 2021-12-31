@@ -1,0 +1,13 @@
+<!--pages/base/index.wxml-->
+<view style="width: 750rpx;line-height: 88rpx;text-align: center;background: white;">
+  基础组件
+</view>
+<view class="content">
+  <pageView pageLimit="2">
+    <view style="display: flex;flex-direction: column;">
+      <!-- 注入对象名称: 组件id + 'Target' (默认pageViewTarget) -->
+      <caseItem wx:for="{{pageViewTarget.list}}" item="{{item}}" wx:key="index"></caseItem>
+    </view>
+  </pageView>
+</view>
+
